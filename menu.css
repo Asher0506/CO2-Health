@@ -1,0 +1,127 @@
+/*--Top Nav--*/
+
+.navbar .navbar-nav .nav-link {
+    color: #e3e9e5;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #6e726e;
+  color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 0.6em;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.6em;
+  }
+  @media only screen and (min-width: 992px) {
+    .navbar {
+      padding: 0;
+    }
+    .navbar .navbar-nav .nav-link {
+      padding: 1em 0.7em;
+    }
+    .navbar .navbar-brand {
+      padding: 0 0.8em;
+    }
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0.7em;
+    transition: all 0.5s;
+  }
+
+
+
+/*--reviewstyle--*/
+
+.container-fluid{
+    margin-top: 0;
+}
+
+.testcard{
+    width: 100%;
+    height: 200px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+    margin-bottom: 15px;
+}
+
+.testcard .box{
+    position: absolute;
+    color: #262626;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    border: 3px solid gray;
+    background: #fff;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    backface-visibility: hidden;
+}
+
+.testcard .box.front{
+    background-image: url(p2.jpg);
+    background-repeat: no-repeat;
+}
+
+.testcard .box.front,
+.testcard .box.back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.testcard .box.front img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 5px solid #262626;
+    margin-bottom: 30px;
+}
+
+
+
+.testcard:hover .box.front{
+    transform: rotateY(180deg);
+}
+
+.box.front h2{
+    font-family: bebeas neue;
+}
+
+.box.front h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.socials{
+    margin: 0 15px;
+}
+
+.testcard .box.back{
+    position: absolute;
+    background-image: url(p1.jpg);
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.testcard .box.back .bi-quote{
+    position: absolute;
+    top: 15px;
+    position: center;
+    font-size: 50px;
+}
+
+.testcard:hover .box.back{
+    transform: rotateY(360deg);
+}
