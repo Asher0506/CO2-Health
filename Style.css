@@ -32,8 +32,12 @@
     transition: all 0.5s;
   }
 
+ 
+  .word {
+    opacity: 100%;
+    color: red;
+  }
 
-
-  .image  { 
-    opacity: 25%;
+  .background-image {
+    opacity: 100%;
   }
