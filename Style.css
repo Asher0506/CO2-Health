@@ -43,4 +43,5 @@
     background: no-repeat;
     background-position: center;
     position: center;
+    object-fit: cover;
   }
